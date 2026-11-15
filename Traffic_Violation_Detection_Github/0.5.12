@@ -1,0 +1,10 @@
+Name: lap
+Version: 0.5.13
+Summary: Linear Assignment Problem solver (LAPJV/LAPMOD).
+Home-page: https://github.com/gatagat/lap
+Author: gatagat, rathaROG, and co.
+Author-email: 
+License: BSD-2-Clause
+Location: C:\Users\rmoos\OneDrive\Desktop\Code\Traffic Violation Detection\.venv\Lib\site-packages
+Requires: numpy
+Required-by: 
