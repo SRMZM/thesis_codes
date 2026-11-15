@@ -1,0 +1,6 @@
+# Core dependencies for Traffic Violation Detection
+# Install with: python -m pip install -r requirements.txt
+
+numpy
+opencv-python
+ultralytics

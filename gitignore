@@ -1,0 +1,62 @@
+# Python bytecode and cache
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Environment variables and local secrets
+.env
+.env.*
+!.env.example
+
+# IDE and editor settings
+.spyproject/
+.spyderproject/
+.ipynb_checkpoints/
+.idea/
+.vscode/
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Logs
+*.log
+
+# Model weights and exported inference engines
+# These files can be large; distribute them separately or with Git LFS if needed.
+*.pt
+*.pth
+*.onnx
+*.engine
+
+# Local videos and datasets
+# Keep source code and configuration files tracked.
+videos/
+datasets/
+*.asf
+*.mp4
+*.avi
+*.mov
+*.mkv
+
+# Generated inference outputs
+runs/
+results/
+output/
+outputs/
+
+# Local temporary files
+*.tmp
+*.bak

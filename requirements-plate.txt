@@ -1,0 +1,6 @@
+# Optional dependencies for the license-plate OCR functionality.
+# Install the core dependencies and the OCR package with:
+# python -m pip install -r requirements-plate.txt
+
+-r requirements.txt
+hezar
