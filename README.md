@@ -160,6 +160,7 @@ configuration files must match the camera view being processed.
                                       offsets, using the keys `x1`, `y1`,
                                       `x2`, `y2`, `x_offset`, and
                                       `y_offset`.
+
   -----------------------------------------------------------------------
 
 The forbidden-boundary configuration follows the project's defined
@@ -193,7 +194,7 @@ movements rather than recognize plate numbers.
 A configuration tested during development used:
 
 -   Model: `yolo26n.pt`
--   Input video: `videos/Takhti_3.asf`
+-   Input video: `videos/Takhti_1.asf`
 -   Image size: `1280`
 -   Confidence threshold: `0.5`
 
@@ -231,8 +232,8 @@ compatible GPU can substantially improve inference speed.
 ### 1. Clone the repository
 
 ``` bash
-git clone <REPOSITORY_URL>
-cd <REPOSITORY_DIRECTORY>
+git clone https://github.com/SRMZM/thesis_codes.git
+cd thesis_codes
 ```
 
 Replace the placeholders with the URL and directory name of your
@@ -263,28 +264,21 @@ source .venv/bin/activate
 
 ### 3. Install dependencies
 
-If the repository contains a `requirements.txt` file:
-
 ``` bash
 pip install -r requirements.txt
 ```
 
-If it does not, install the dependencies used by the selected processing
-mode:
+Or you can install the dependencies used by the command bellow:
 
 ``` bash
 pip install opencv-python numpy ultralytics
 ```
 
-The license-plate-enabled mode also requires the OCR and
-plate-processing dependencies used by that part of the source code.
-Install their compatible versions according to the dependency files or
-setup instructions included in the repository.
+If you want license-plate-enabled mode:
 
-> For reproducible results, add a tested `requirements.txt` (or
-> equivalent environment specification) to the repository. Do not assume
-> that the latest versions of all packages will necessarily be
-> compatible with the original development environment.
+``` bash
+pip install -r requirements-plate.txt
+```
 
 ## Running the Project
 
@@ -306,16 +300,12 @@ are organized in the repository. Before running the pipeline:
 For example, to run a Python entry-point script:
 
 ``` bash
-python <main_script>.py
+python main.py
 ```
-
-Replace `<main_script>.py` with the actual entry-point filename in the
-repository. The project-specific run command should be updated here once
-the final repository structure is fixed.
 
 ## Input Videos and Test Data
 
-The system was tested using traffic videos obtained from the Tehran
+The system was tested using traffic videos obtained from the Isfahan
 Traffic Control organization. The quality of the results varied across
 videos and camera views.
 
@@ -374,7 +364,7 @@ features already implemented.
 -   **OpenCV** for computer-vision and video-processing tools.
 -   **Hezar** for OCR functionality used in the license-plate-enabled
     processing path.
--   The Tehran Traffic Control organization for providing the traffic
+-   The Isfahan Traffic Control organization for providing the traffic
     videos used during development.
 
 ------------------------------------------------------------------------
