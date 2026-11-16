@@ -156,7 +156,7 @@ configuration files must match the camera view being processed.
                                       `north`, `east`, `south`, and
                                       `west`.
 
-  `crop_region.json`                  Stores the crop rectangle and its
+    `crop_region.json`                  Stores the crop rectangle and its
                                       offsets, using the keys `x1`, `y1`,
                                       `x2`, `y2`, `x_offset`, and
                                       `y_offset`.
@@ -193,7 +193,7 @@ movements rather than recognize plate numbers.
 A configuration tested during development used:
 
 -   Model: `yolo26n.pt`
--   Input video: `videos/Takhti_3.asf`
+-   Input video: `videos/Takhti_1.asf`
 -   Image size: `1280`
 -   Confidence threshold: `0.5`
 
@@ -206,7 +206,7 @@ violation-only setup.
 
 A configuration tested during development used:
 
--   Model: `yolo26m.pt`
+-   Model: `yolo26n.pt`
 -   Input video: `videos/Takhti_1.asf`
 -   License-plate detection and recognition components, including Hezar
     OCR.
@@ -315,15 +315,14 @@ the final repository structure is fixed.
 
 ## Input Videos and Test Data
 
-The system was tested using traffic videos obtained from the Tehran
+The system was tested using traffic videos obtained from the Isfahan
 Traffic Control organization. The quality of the results varied across
 videos and camera views.
 
 The videos used during development are not necessarily included in this
-repository. Make sure you have the right to use and redistribute any
-video before publishing it. If the original videos cannot be shared,
-provide a small sample video that you are authorized to distribute, or
-document how users can supply their own footage.
+repository. You have to use your own vidoe for development in the place 
+where is mentioned in a folder whose name is 'videos' in project main 
+folder.
 
 ## Limitations
 
@@ -374,7 +373,7 @@ features already implemented.
 -   **OpenCV** for computer-vision and video-processing tools.
 -   **Hezar** for OCR functionality used in the license-plate-enabled
     processing path.
--   The Tehran Traffic Control organization for providing the traffic
+-   The Isfahan Traffic Control organization for providing the traffic
     videos used during development.
 
 ------------------------------------------------------------------------
